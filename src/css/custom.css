@@ -1,0 +1,70 @@
+:root {
+  --ifm-color-primary: #4ea1ff;
+  --ifm-color-primary-dark: #318ff8;
+  --ifm-color-primary-darker: #2286f5;
+  --ifm-color-primary-light: #6ab2ff;
+  --ifm-color-primary-lighter: #85c1ff;
+
+  --ifm-background-color: #111318;
+  --ifm-navbar-background-color: #161a22;
+  --ifm-footer-background-color: #161a22;
+
+  --ifm-font-color-base: #e6eaf2;
+  --ifm-heading-color: #ffffff;
+
+  --ifm-code-font-size: 95%;
+  --ifm-global-radius: 10px;
+}
+
+[data-theme='light'] {
+  --ifm-background-color: #ffffff;
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: #111318;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(8px);
+}
+
+/* Sidebar */
+.theme-doc-sidebar-container {
+  border-right: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Active sidebar item */
+.menu__link--active {
+  background: rgba(78,161,255,0.12);
+  border-radius: 8px;
+}
+
+/* Cards / blocks */
+article {
+  background: rgba(255,255,255,0.015);
+  border-radius: 14px;
+  padding: 1rem 2rem;
+}
+
+/* Code blocks */
+pre {
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+}
+
+/* Images */
+img {
+  border-radius: 12px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
