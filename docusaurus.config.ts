@@ -14,13 +14,14 @@ const config: Config = {
   url: 'https://jcf-402.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/datacharts-docs/',
+
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'JCF-402', // Usually your GitHub org/user name.
-  projectName: 'datacharts', // Usually your repo name.
-
+  projectName: 'datacharts-docs', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -93,6 +94,7 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+
   } satisfies Preset.ThemeConfig,
 };
 
