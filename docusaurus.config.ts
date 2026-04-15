@@ -11,7 +11,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://jcf-402.github.io',
+  url: 'https://datacharts-docs.vercel.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -37,10 +37,8 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: require.resolve('./sidebars.ts'),
           routeBasePath: '/',
-          editUrl:
-            'https://github.com/JCF-402/datacharts',
         },
         theme: {
           customCss: './src/css/custom.css',
