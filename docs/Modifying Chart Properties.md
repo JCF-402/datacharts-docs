@@ -35,9 +35,9 @@ somename.pointStyle = star
 
 ## Global Properties
 
-Global properties will work on canvas/wrapper customization. For example you will be able to change the canvas height in pixels like `global.style.height = 400px`
+Global properties will work on canvas/wrapper customization. For example you can change the height of the chart with `global.canvasHeight = 400`. 
 
-Currently the only global property implemented is `global.xrange`.
+The various options available will show up by the autocomplete feature when writing `global.`
 
 ## Custom Properties
 

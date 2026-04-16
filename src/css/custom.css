@@ -24,15 +24,23 @@ html[data-theme='dark'] {
   --ifm-background-color: #111318;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Navbar */
 .navbar {
   border-bottom: 1px solid rgba(255,255,255,0.06);
-  backdrop-filter: blur(8px);
+  background: var(--ifm-navbar-background-color);
 }
 
-/* Sidebar */
-.theme-doc-sidebar-container {
-  border-right: 1px solid rgba(255,255,255,0.06);
+/* Desktop docs sidebar only */
+@media (min-width: 997px) {
+  .theme-doc-sidebar-container {
+    border-right: 1px solid rgba(255,255,255,0.06);
+  }
 }
 
 /* Active sidebar item */
@@ -41,30 +49,72 @@ html[data-theme='dark'] {
   border-radius: 8px;
 }
 
-/* Cards / blocks */
-article {
+/* Docs content card */
+.theme-doc-markdown {
+  min-width: 0;
+}
+
+.theme-doc-markdown article {
   background: rgba(255,255,255,0.015);
   border-radius: 14px;
   padding: 1rem 2rem;
+  max-width: 100%;
 }
 
 /* Code blocks */
 pre {
   border: 1px solid rgba(255,255,255,0.06);
   border-radius: 12px;
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 /* Images */
 img {
   border-radius: 12px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Headings */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 700;
 }
 
 /* Footer */
 .footer {
   border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Mobile */
+@media (max-width: 996px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .main-wrapper,
+  .container,
+  .row,
+  .col {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .theme-doc-markdown article {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .menu__link {
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  /* Important: do NOT override .navbar-sidebar height/position/overflow */
+  .theme-doc-sidebar-container {
+    border-right: none;
+  }
 }

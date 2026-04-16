@@ -29,6 +29,7 @@ const Sidebars = {
         'examples/nested'
       ],
     },
+    'Exporting Charts'
   ],
 };
 

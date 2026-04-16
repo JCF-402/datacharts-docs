@@ -5,7 +5,6 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'DataCharts',
-
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },

@@ -1,13 +1,20 @@
 # Supported Chart Types
 
 The plugin currently supports the following chart types from ChartJs. 
-- lineplot
-- barplot
-- scatterplot
+- line
+- bar
+- scatter
+- pie 
+- doughnut
+- polarArea
+- radar
 
 These are declared at the beginning of a codeblock. 
 ```
-```lineplot
+```datachart
+type :: line
 y = x^2
 
 ```
+
+The `type::` is required, otherwise the plot won't generate.

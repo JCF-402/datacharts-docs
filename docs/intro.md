@@ -14,7 +14,7 @@ DataCharts is an Obsidian plugin for creating charts, plotting functions, and vi
 
   
 
-- Currently supports line, bar and scatter charts powered by Chart.js
+- Currently supports line, scatter, bar and other chart types powered by Chart.js
 
 - Uses Mathjs for parsing and plotting mathematical equations.
 
