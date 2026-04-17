@@ -8,7 +8,7 @@ title: DataCharts
 
 DataCharts is an Obsidian plugin for creating charts, plotting functions, and visualizing note data directly in markdown. It originally started as a personal project to add math plotting and expanded.
 
-![Line Plot Demo](/img/linePlotGIF.gif)
+![Line Plot Demo](/img/introGIF.gif)
 
 ## Features
 
